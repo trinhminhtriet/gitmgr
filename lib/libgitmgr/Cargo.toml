@@ -1,6 +1,6 @@
 [package]
 name = "libgitmgr"
-version = "0.1.0"
+version = "0.1.1"
 
 categories = ["development-tools"]
 description = "Provides the ability to find a minimal set of user-relevant information for Git repositories on a local filesystem."
