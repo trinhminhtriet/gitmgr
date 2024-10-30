@@ -1,0 +1,29 @@
+[package]
+name = "gitmgr"
+version = "0.1.0"
+
+categories = ["command-line-utilities", "command-line-interface"]
+description = "gitmgr: A command-line tool to organize, monitor, and sync multiple Git repositories with ease."
+keywords = ["git", "cli"]
+readme = "../../README.md"
+
+authors.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+libgitmgr = { version = "0.1.0", path = "../../lib/libgitmgr" }
+
+anyhow = { workspace = true }
+clap = { workspace = true }
+dirs = { workspace = true }
+env_logger = { workspace = true }
+log = { workspace = true }
+remain = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+termcolor = { workspace = true }
+thiserror = { workspace = true }
+toml = { workspace = true }

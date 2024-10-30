@@ -1,0 +1,24 @@
+name: ci
+on:
+  push:
+    branches:
+      - "master"
+concurrency:
+  group: "${{ github.workflow }}-${{ github.ref }}"
+jobs:
+  ci:
+    name: "Post Merge Checks" 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: stable
+          override: true
+          components: rustfmt, clippy
+      - uses: Swatinem/rust-cache@v1
+      - uses: actions-rs/cargo@v1
+        with:
+          command: xtask
+          args: ci
