@@ -1,6 +1,6 @@
 [package]
 name = "gitmgr"
-version = "0.1.5"
+version = "0.1.6"
 
 categories = ["command-line-utilities", "command-line-interface"]
 description = "gitmgr: A command-line tool to organize, monitor, and sync multiple Git repositories with ease."
@@ -14,7 +14,7 @@ license.workspace = true
 repository.workspace = true
 
 [dependencies]
-libgitmgr = { version = "0.1.5", path = "../../lib/libgitmgr" }
+libgitmgr = { version = "0.1.6", path = "../../lib/libgitmgr" }
 
 anyhow = { workspace = true }
 clap = { workspace = true }
