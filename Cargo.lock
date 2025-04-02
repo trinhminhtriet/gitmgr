@@ -300,7 +300,7 @@ dependencies = [
 
 [[package]]
 name = "gitmgr"
-version = "0.1.7"
+version = "0.1.8"
 dependencies = [
  "anyhow",
  "clap",
@@ -395,7 +395,7 @@ dependencies = [
 
 [[package]]
 name = "libgitmgr"
-version = "0.1.7"
+version = "0.1.8"
 dependencies = [
  "anyhow",
  "env_logger",
